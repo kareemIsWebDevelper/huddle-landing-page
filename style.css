@@ -1,0 +1,156 @@
+body {
+    background: url(./images/bg-desktop.svg) center center no-repeat;
+    background-size: 100% 100%;
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    min-height: 100vh;
+}
+
+
+#app {
+    
+    width: auto;
+    height: auto;
+}
+
+.icon {
+    width: 200px;
+    height: 50px;
+    margin-left: 70px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#mockup {
+    background: url(./images/illustration-mockups.svg) no-repeat;
+    background-size: 100% 100%;   
+    width: 570px; height: 430px;
+    margin:  0 100px 0 70px;
+}
+
+article {
+    color: white;
+}
+
+article h1 {
+    margin-bottom: -15px;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+article p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: -59px;
+}
+
+.circle {
+    width: 40px; height: 40px;
+    background-color:hsl(257, 40%, 49%);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+i {
+    color: white;
+    font-size: 20px;
+}
+
+a:hover i {
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background: url(./images/bg-mobile.svg) center center no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        display: flex;
+    }
+
+    .icon {
+        margin: auto;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+
+    #mockup {
+        /* background: url(./images/illustration-mockups.svg) no-repeat; */
+        /* background-size: 100% 100%;    */
+        width: 250px; height: 200px;
+        margin: auto;
+        /* margin:  0 100px 0 70px; */
+    }
+
+    p br {
+        display: none
+    }
+
+    article {
+        display: flex;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    article h1 {
+        font-size: 20px;
+        margin: auto;
+    }
+    article p {
+        font-size: 13px;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
